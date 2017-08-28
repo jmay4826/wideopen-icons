@@ -1,0 +1,181 @@
+html, body, ul, li, p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background: url('/img/wot-masthead-dark.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 525px;
+}
+
+nav {
+    padding: 30px 60px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    padding: 0 10px;
+}
+
+#logo {
+    width: 70%;
+}
+.call-out {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+     padding: 50px; 
+}
+.call-out-content{
+    /* display: inline-block; */
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.small {
+    font-size: 20px;
+    display: block;
+}
+
+.large{
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 300;
+}
+.call-out-main {
+    padding-bottom: 30px;
+}
+.call-out-subtitle {
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+ .call-out-subtitle::before, .call-out-subtitle::after{
+    width: 25%;
+    margin: 20px;
+    background-color: white;
+    height: 10px;
+    display: inline-block;
+    content: " ";
+} 
+.orange {
+    color: #ff803a;
+}
+
+.green {
+    color: #bdd436;
+    font-weight: 600;
+}
+
+button {
+    background-color: #bdd436;
+    border: 2px solid #bdd436;
+    border-radius: 25px;
+    color: white;
+    padding: 11px 36px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* .learn {
+    width: 95%
+} */
+
+main {
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #727177;
+}
+
+.tools {
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+    background: url('/img/sprite_home.png');
+    background-position: -22px -113px;
+}
+
+.works {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #727177;
+    padding-bottom: 30px;
+}
+
+.dash {
+    width: 100px;
+    background-color: white;
+    content: " ";
+}
+
+@media (max-width: 768px){
+    #links {
+        visibility: hidden;
+    }
+    #hamburger {
+        display: inline-block;
+    }
+    i {
+        color: black;
+    }
+
+    .learn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 684px){
+    nav {
+        background: white;
+    }
+    .call-out-content {
+        text-align: center;
+    }
+    .large {
+        font-size: 82px;
+        line-height: 82px;
+    }
+
+}
+
